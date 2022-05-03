@@ -12,8 +12,6 @@ CREATE table teachers (
   is_active BOOLEAN DEFAULT TRUE
 );
 
-
-
 CREATE table assistance_requests(
 id SERIAL PRIMARY KEY NOT NULL,
 assignment_id INTEGER REFERENCES assignments(id) ON DELETE CASCADE,
